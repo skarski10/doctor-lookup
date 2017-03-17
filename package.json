@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skarski10/doctor-lookup.git"
+    "url": ""
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/skarski10/doctor-lookup/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/skarski10/doctor-lookup#readme",
+  "homepage": "",
   "devDependencies": {
     "bower-files": "^3.14.1",
     "browser-sync": "^2.18.8",
