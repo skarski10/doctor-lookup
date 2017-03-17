@@ -12,7 +12,6 @@ function doctorInfo(image, bio, degree) {
 function doctorLanguages(languages){
   $("#languages").empty();
   languages.forEach(function(language) {
-    console.log(language.name);
     $("#languages").append(language.name + " | ");
   });
 }
@@ -31,7 +30,6 @@ function allDoctors(results){
     $("#degree").empty();
     $('#doctor-name').text($(this).val());
     var nameArray = $(this).val().split(' ');
-    // console.log(nameArray[0]);
     getDoctor(nameArray[0], nameArray[1], doctorInfo, doctorLanguages);
   });
 }

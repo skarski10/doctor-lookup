@@ -30,8 +30,5 @@ var getDoctor = function(first, last, doctorInfo, doctorLanguages) {
     });
 };
 
-
-// var getInfo = function()
-
 exports.getDoctorsModule = getDoctors;
 exports.getDoctorModule = getDoctor;
