@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="build/css/vendor.min.css">
     <link rel="stylesheet" href="build/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <script type="text/javascript" src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title></title>
@@ -11,25 +12,31 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Find a doctor for your symptom!</h1>
+
       </div>
       <div class="row" id="search">
-        <form>
-          <input class="form-control" id="symptom" type="text" value="" placeholder="enter symptoms">
-          <button type="submit" class="btn btn-warning">Enter</button>
-        </form>
-      </div>
-      <div class="row">
-        <ul>
-          <span id="doctors"></span>
-        </ul>
+        <div class="col-md-6">
+          <img src="/img/zoidberg.png" alt="" />
+        </div>
+        <div class="col-md-6">
+          <h3 id="quote">I don't like the look of this doctor. I bet I've lost more patients than he's even treated!</h3>
+          <form>
+            <input class="form-control" id="symptom" type="text" value="" placeholder="enter symptoms">
+            <button type="submit" class="btn btn-warning">Enter</button>
+          </form>
+          <div class="row">
+            <ul id="doctorList">
+              <span id="doctors"></span>
+            </ul>
+          </div>
+        </div>
       </div>
       <div id="result">
-        <h2><span id="doctor-name">Name:</span></h2> <!-- profile - first_name, last_name -->
-        <span id="degree">Name:</span> <!-- education - degree, school -->
-        <span id="languages">Name:</span> <!-- profile - languages[] - name -->
+        <h2>Name: <span id="doctor-name"></span></h2> <!-- profile - first_name, last_name -->
+        <p>Degree: <span id="degree"></span></p><br> <!-- education - degree, school -->
+        <p>Languages: <span id="languages"></span></p><br> <!-- profile - languages[] - name -->
         <h5 id="image"></h5> <!-- profile - image_url -->
-        <span id="bio">Bio:</span><br> <!-- profile - bio -->
+        <p>Bio: <span id="bio"></span></p><br> <!-- profile - bio -->
         <button type="button" id="close" class="btn btn-danger">Close</button>
       </div>
     </div>

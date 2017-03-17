@@ -4,8 +4,7 @@ var getDoctor = require('./../js/doctor.js').getDoctorModule;
 
 
 function doctorInfo(image, bio, degree) {
-  console.log(image);
-  $('#image').html("<img src='" + image + "'>");
+  $('#image').html("<img class='image' src='" + image + "'>");
   $('#degree').text(degree);
   $('#bio').text(bio);
 }
@@ -23,11 +22,13 @@ function allDoctors(results){
   $("#practice").empty();
   results.data.forEach(function(result) {
     var name = result.profile.first_name + " " + result.profile.last_name;
-    $('#doctors').append("<br><button id=\"" + name + "\" class='btn btn-primary doctor-info' type='button' value=\"" + name + "\">" + name + "</button><br>");
+    $('#doctors').append("<br><button id=\"" + name + "\" class='btn doctor-info' type='button' value=\"" + name + "\">" + name + "</button><br>");
   });
   $('.doctor-info').click(function() {
     $('#result').show();
     $("#search").hide();
+    $("#bio").empty();
+    $("#degree").empty();
     $('#doctor-name').text($(this).val());
     var nameArray = $(this).val().split(' ');
     // console.log(nameArray[0]);
@@ -44,5 +45,5 @@ $(document).ready(function() {
   $("#close").click(function(){
     $("#search").show();
    $("#result").hide();
- })
+ });
 });

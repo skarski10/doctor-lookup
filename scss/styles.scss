@@ -1,5 +1,10 @@
+
+
 #result {
   position:fixed;
+  color: #E1593F;
+  font-size: 30px;
+  text-shadow: 1px 1px black;
   height: 80vh;
   top: 10vh;
   display: none;
@@ -10,6 +15,12 @@
   border:1px solid #eaeaea;
   border-radius: 30px;
   padding: 5%;
+  background-image: url(/img/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size:cover;
+  // opacity: 0.8;
 }
 
 img {
@@ -17,21 +28,41 @@ img {
   max-width: 60vw;
 }
 
-.page-info {
-  margin:2px;
+.doctor-info{
+  background-color: #E1593F;
+  color: #FFF;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: center;
+  border: solid #AEDBD6;
+  box-shadow: rgba(0, 0, 0, 0.25) -2px 2px;
 }
 
-.game-info {
-  background-color: #f4e9d3;
+#symptom {
+  margin-left: 8vw;
+  width: 20vw;
+}
+#quote {
+  margin-left: 8vw;
 }
 
-#title {
-  margin-left: 30vw;
-  width:30vw;
+.btn-warning {
+  margin-left: 5vw;
+}
+
+#doctorList {
+  margin-left: 2vw;
 }
 
 body {
+  background: linear-gradient(180deg, #FFFFFF, #E1593F);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
   text-align: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 button {
@@ -39,8 +70,13 @@ button {
 }
 
 .jumbotron {
-  background-image: url(/img/background.jpg);
+  background-image: url(/img/background1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 20vh;
+}
+
+.image {
+  border: double white 4px;
 }
