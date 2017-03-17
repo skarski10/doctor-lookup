@@ -13,10 +13,10 @@
       <div class="jumbotron">
         <h1>Find a doctor for your symptom!</h1>
       </div>
-      <div class="row">
+      <div class="row" id="search">
         <form>
           <input class="form-control" id="symptom" type="text" value="" placeholder="enter symptoms">
-          <button type="submit" class="btn btn-danger">Enter</button>
+          <button type="submit" class="btn btn-warning">Enter</button>
         </form>
       </div>
       <div class="row">
@@ -25,12 +25,12 @@
         </ul>
       </div>
       <div id="result">
-        <h1>results</h1>
-        <h3 id="doctor-name"></h3> <!-- profile - first_name, last_name -->
+        <h2><span id="doctor-name">Name:</span></h2> <!-- profile - first_name, last_name -->
+        <span id="degree">Name:</span> <!-- education - degree, school -->
+        <span id="languages">Name:</span> <!-- profile - languages[] - name -->
         <h5 id="image"></h5> <!-- profile - image_url -->
-        <h5 id="degree"></h5> <!-- education - degree, school -->
-        <h5 id="languages"></h5> <!-- profile - languages[] - name -->
-
+        <span id="bio">Bio:</span><br> <!-- profile - bio -->
+        <button type="button" id="close" class="btn btn-danger">Close</button>
       </div>
     </div>
   </body>

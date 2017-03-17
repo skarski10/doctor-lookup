@@ -16,10 +16,15 @@ var getDoctor = function(first, last, doctorInfo, doctorLanguages) {
 
    .then(function(results) {
      var currentDoctor = results.data[0];
-      doctorInfo(currentDoctor.profile.image_url, currentDoctor.educations[0].school);
-      doctorInfo(currentDoctor.profile.languages);
-
-    })
+     var doctorProfile = currentDoctor.profile;
+     console.log(currentDoctor);
+     doctorLanguages(doctorProfile.languages);
+     if (currentDoctor.educations.length > 0) {
+       doctorInfo(doctorProfile.image_url, doctorProfile.bio, currentDoctor.educations[0].school);
+     } else {
+       doctorInfo(doctorProfile.image_url);
+       }
+   })
    .fail(function(error){
       console.log("fail");
     });

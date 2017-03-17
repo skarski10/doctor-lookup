@@ -1,0 +1,46 @@
+#result {
+  position:fixed;
+  height: 80vh;
+  top: 10vh;
+  display: none;
+  z-index: 5;
+  width:80vw;
+  left:10vw;
+  background: white;
+  border:1px solid #eaeaea;
+  border-radius: 30px;
+  padding: 5%;
+}
+
+img {
+  max-height: 50vh;
+  max-width: 60vw;
+}
+
+.page-info {
+  margin:2px;
+}
+
+.game-info {
+  background-color: #f4e9d3;
+}
+
+#title {
+  margin-left: 30vw;
+  width:30vw;
+}
+
+body {
+  text-align: center;
+}
+
+button {
+  margin: 10px;
+}
+
+.jumbotron {
+  background-image: url(/img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
